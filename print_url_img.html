@@ -19,8 +19,9 @@ text {
 	function onMessage (evt) {
 	    if (evt && evt.data && evt.data.hasOwnProperty("data"))
 	    {
+		var output_div = document.getElementById('output_div');
 	    	if(evt.data.data.length == 0){
-	    		var output_div = document.getElementById('output_div');
+	    		
 	  			output_div.innerHTML = "URL";
 	    	}else{
 			output_div.innerHTML = " ";
